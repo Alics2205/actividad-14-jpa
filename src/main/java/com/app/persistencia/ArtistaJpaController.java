@@ -14,8 +14,11 @@ public class ArtistaJpaController {
 
 	// En el constructor decimos con qué unidad de persistencia vamos a trabajar.
 	// Esa unidad está definida en persistence.xml con el nombre "ejemplojpa".
+	// tengo que espicicar con el mismo nombre que esta en mi unidad 
+	
+	
 	public ArtistaJpaController() {
-		emf = Persistence.createEntityManagerFactory("ejemplojpa");
+		emf = Persistence.createEntityManagerFactory("mi-unidad-jpa");
 	}
 
 	// Método que crea y devuelve un nuevo "EntityManager".
