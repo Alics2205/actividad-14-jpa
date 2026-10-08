@@ -30,11 +30,12 @@ public class Artista implements Serializable {
 
     public Artista() { }
 
-    public Artista(String nombre, String generoMusical, String nacionalidad, int edad) {
+    public Artista(String nombre, String generoMusical, String nacionalidad, int edad, date fechaNacimiento) {
         this.nombre = nombre;
         this.generoMusical = generoMusical;
         this.nacionalidad = nacionalidad;
         this.edad = edad;
+        this.fechaNacimiento = fechaNacimiento;
     }
 
     // getters/setters
