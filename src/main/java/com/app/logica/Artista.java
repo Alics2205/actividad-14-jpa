@@ -47,6 +47,10 @@ public class Artista implements Serializable {
     public void setNacionalidad(String nacionalidad) { this.nacionalidad = nacionalidad; }
     public int getEdad() { return edad; }
     public void setEdad(int edad) { this.edad = edad; }
+    
+    //Getters y Setters para fechaNacimiento
+    public Date getFechaNacimiento() { return fechaNacimiento; }
+    public void setFechaNacimiento(Date fechaNacimiento) { this.fechaNacimiento = fechaNacimiento; }
 }
 
 
