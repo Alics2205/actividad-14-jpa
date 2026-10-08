@@ -29,15 +29,17 @@ public class CancionJpaController {
 		EntityManager em = null;
 		try {
 			// Abrimos la conexión (traemos al empleado).
-			
+			em = getEntityManager();
 			
 			// Iniciamos la transacción (arranca la promesa de que se hará todo o nada).
+			em.getTrasaction().begin();
 			
 			
 			// Guardamos el objeto Cancion en la base (todavía no confirmado).
-			
+			em.persist(canc);
 			
 			// Confirmamos la transacción: ahora sí, el dato queda guardado en la BD.
+			em.getTrasaction().comitt();
 			
 		} finally {
 			// Cerramos la conexión si estaba abierta (el empleado termina su turno).
