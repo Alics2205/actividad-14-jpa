@@ -32,9 +32,10 @@ public class ControladoraLogica {
 		}
 
 		// AGREGAR AL MENOS UNA VALIDACIÓN MAS**************
-		if () {
-			throw new Exception("El artista debe tener un  .");
-		
+		// Fecha de nacimiento no nula y en el pasado/presente
+        if (art.getFechaNacimiento() == null) {
+            throw new Exception("El artista debe tener una fecha de nacimiento.");
+        }
 		// Si pasa todas las validaciones, recién ahí se manda a la persistencia
 		//LE PASSA EL DATO A LA CONTROLADORAPERSISTENCIA 
 			// CONTROLADORAPERSISTENCIA  ESTA elige el metodo necesario
