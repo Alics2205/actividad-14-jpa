@@ -61,7 +61,7 @@ public class ControladoraLogica {
 		// AGREGAR AL MENOS UNA VALIDACIÓN MAS
 
 		// Si pasa todas las validaciones, se guarda en la base de datos
-		//controlPersis.crearCancion(can);
+		controlPersis.crearCancion(can);
 	}
 }
 
